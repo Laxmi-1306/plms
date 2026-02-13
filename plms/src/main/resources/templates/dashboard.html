@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="/style.css">
+
+<div class="container">
+<h2>Welcome, <span th:text="${student.name}"></span></h2>
+<h3>Recommended Courses</h3>
+<ul>
+    <li th:each="c : ${courses}" th:text="${c.title}"></li>
+</ul>
+</div>

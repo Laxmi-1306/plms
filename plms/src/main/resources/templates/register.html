@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/style.css">
+<div th:replace="fragments/navbar"></div>
+
+<div class="container">
+<h2>Student Registration</h2>
+<form action="/register" method="post">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <input type="text" name="interest" placeholder="Interest (Java / Python / AI)">
+    <button type="submit">Register</button>
+</form>
+</div>
